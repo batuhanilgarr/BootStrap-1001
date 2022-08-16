@@ -5,67 +5,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Margin & Padding</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Bootstrap 5.2 -->
+  <title>Bootstrap Border & Sizing</title>
 
+  <!-- Bootstrap 5.2 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootstrap 4.0 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Bootstrap 4.0 -->
-
 
   <style>
-    div {
-      width: 200px;
-      height: 200px;
+    .d-inline-block {
       display: inline-block;
     }
-
-
-    /*
-
-            margin (m) 0,1,2,3,4,5  m-0  m-1 ... m-5
-
-            margin-right => mr
-            margin-left => ml
-            margin-top => mt
-            margin-bottom => mb
-
-            margin-top, margin-bottom => my (y ekseni)
-            margin-left, margin-right => mx (x ekseni)
-
-
-            padding (p) 0,1,2,3,4,5  p-0  p-1 ... p-5
-            padding-right => pr
-            padding-left => pl
-            padding-top => pt
-            padding-bottom => pb
-
-            padding-top, padding-bottom => py (y ekseni) --> (yukarı) (aşağı)
-            padding-left, padding-right => px (x ekseni) --> (sağ) (sol)
-            
-    */
-
   </style>
-
-
 
 </head>
 
-<body>
+<body class="p-5">
+  <!-- p-5 = padding 5 -->
+
+  <div class="bg-light mt-2 p-4"></div>
+  <div class="bg-light mt-2 p-4 border"></div> <!-- 4 Kenara border verir -->
+  <div class="bg-light mt-2 p-4 border-top"></div> <!-- Üst Kenar border verir -->
+  <div class="bg-light mt-2 p-4 border-right"></div> <!-- Sağ Kenar border verir -->
+  <div class="bg-light mt-2 p-4 border-left"></div> <!-- Sol Kenar border verir -->
+  <div class="bg-light mt-2 p-4 border-bottom"></div> <!-- Alt Kenar border verir -->
 
 
-  <div class="bg-success py-3">First</div>
-  <div class="bg-primary px-5">Second</div>
+  <br><br>
+
+
+  <div class="bg-light mt-2 p-4 border border-0"></div> <!-- 0 Kenara border verir -->
+  <div class="bg-light mt-2 p-4 border border-top-0"></div> <!-- Üst kenar border vermez -->
+  <div class="bg-light mt-2 p-4 border border-bottom-0"></div> <!-- Alt Kenar border vermez -->
+  <div class="bg-light mt-2 p-4 border border-left-0"></div> <!-- Sol Kenar border vermez -->
+  <div class="bg-light mt-2 p-4 border border-right-0"></div> <!-- Sağ Kenar border vermez -->
+
+
+  <br><br>
+
+  <!-- Border'a renk verilebilir -->
+  <div class="bg-light mt-2 p-4 border border-primary"></div>
+  <div class="bg-light mt-2 p-4 border border-secondary"></div>
+  <div class="bg-light mt-2 p-4 border border-danger"></div>
+
+
+  <br><br>
+
+  <!-- Border'ın kenarlarını yuvarlamak için rounded verilebilir -->
+  <div class="bg-light mt-2 p-4 border border-primary rounded"></div>
+  <div class="bg-light mt-2 p-4 border border-primary rounded-top"></div>
+  <div class="bg-light mt-2 p-4 border border-primary rounded-bottom"></div>
+  <div class="bg-light mt-2 p-4 border border-primary rounded-left"></div>
+  <div class="bg-light mt-2 p-4 border border-primary rounded-right"></div>
+
+
+  <br><br>
+
+  <!-- w = width -->
+  <div class="bg-success mt-2 p-4 w-25"></div><!-- w-25 = width 25% -->
+  <div class="bg-success mt-2 p-4 w-50"></div><!-- w-50 = width 50% -->
+  <div class="bg-success mt-2 p-4 w-75"></div><!-- w-75 = width 75% -->
+  <div class="bg-success mt-2 p-4 w-100"></div><!-- w-100 = width 100% -->
+
+
+
+  <br><br>
+
+
+  <!-- h = height -->
+  <div style="height: 400px;" class="bg-warning">
+    <div class="bg-primary p-4 d-inline-block h-25"></div> <!-- h-25 = hidth 25% -->
+    <div class="bg-primary p-4 d-inline-block h-50"></div> <!-- h-50 = hidth 50% -->
+    <div class="bg-primary p-4 d-inline-block h-75"></div> <!-- h-75 = hidth 75% -->
+    <div class="bg-primary p-4 d-inline-block h-100"></div>
+  </div> <!-- h-100 = hidth 100% -->
+
+
+  <br><br>
+
+
+<div class="shadow bg-light mt-5 p-4"></div> <!-- shadow = kenarını kaplar -->
+<div class="shadow-sm bg-light mt-5 p-4"></div> <!-- shadow-sm = kenarını kaplar ve küçük boyutta -->
+<div class="shadow-lg bg-light mt-5 p-4"></div> <!-- shadow-lg = kenarını kaplar ve büyük boyutta -->
 
 
 
 
 
+
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
   <script src=" js/jquery-3.6.0.min.js">
-  </script> <!-- jquery-3.6.0.min.js -->
-  <script src="js/popper.min.js"></script> <!-- popper.min.js -->
-  <script src="js/bootstrap.min.js"></script> <!-- bootstrap.min.js -->
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
