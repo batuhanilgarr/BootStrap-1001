@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Jumbotron & Breadcrumbs</title>
+
+  <!-- Bootstrap 5.2 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .jumbotron {
+      background-image: url(../10-Images-Floats/img/Avatar-Profile.png);
+      background-size: cover;
+      background-position: 50% 30%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- Jumbotron ; Bootstrap jumbotron önemli içerikleri daha fazla belirgin hale getirmek için büyük gri kutu içinde göstermek için kullanılmaktadır. -->
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Lorem, ipsum dolor.</h1>
+      <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, labore quis ex quo rerum
+        soluta.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, saepe.</p>
+      <a href="#" class="btn btn-primary btn-lg">Lorem, ipsum.</a>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <!-- Breadcrumbs : Sitenizde sayfalar ve kategoriler arasında dolaşan ziyaretçilere rehberlik etmek ziyaretçinin hangi sayfadan hangi sayfaya geçtiğini göstermektedir.-->
+
+  <nav>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+      </ol>
+    </div>
+  </nav>
+
+  <nav>
+    <div class="container"> <!-- container classını kullanarak genişlik ayarlanabilir. -->
+      <ol class="breadcrumb"> <!-- breadcrumb classını kullanarak kategoriler arasında geçiş yapabilir. -->
+        <li class="breadcrumb-item"> 
+          <a href="/">Home</a> <!-- breadcrumb-item classını kullanarak kategoriler arasında geçiş yapabilir. -->
+        </li> 
+        <li class="breadcrumb-item    active">Product</li> <!-- breadcrumb-item classını kullanarak kategoriler arasında geçiş yapabilir. -->
+      </ol>
+    </div>
+  </nav>
+
+  <nav>
+    <div class="container"> <!-- container classını kullanarak genişlik ayarlanabilir. -->
+      <ol class="breadcrumb"> <!-- breadcrumb classını kullanarak kategoriler arasında geçiş yapabilir. -->
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li> 
+        <li class="breadcrumb-item">
+          <a href="/products">Product</a>
+        </li>
+        <li class="breadcrumb-item active">Details</li> <!-- breadcrumb-item classını kullanarak kategoriler arasında geçiş yapabilir. -->
+      </ol>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
