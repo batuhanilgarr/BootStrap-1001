@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Dropdowns</title>
+  <title>Bootstrap Navbar</title>
 
-  <!-- Bootstrap 5.2 -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
   <!-- Bootstrap 4.0 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -16,201 +20,216 @@
 
 </head>
 
-<body class="w-75 mx-auto my-4">
+<body>
 
-  <div class="dropdown">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-danger dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
+  <!-- navbar-expand-sm : small cihazlarda yan yana getirir-->
+  <!-- navbar-expand-md : medium cihazlarda yan yana getirir-->
+  <!-- navbar-expand-lg : large cihazlarda yan yana getirir-->
+  <!-- navbar-expand-xl : xlarge cihazlarda yan yana getirir-->
+  <!-- navbar-expand : tüm cihazlarda yan yana getirir-->
+  <!-- navbar-dark : navbar rengini koyu yapar-->
+  <!-- navbar-light : navbar rengini açık yapar-->
+
+  <!-- justify-content-center : navbar içeriğini ortalar -->
+  <!-- justify-content-end : navbar içeriğini sağa yaslar -->
+  <!-- justify-content-between : navbar içeriğini iki yana yaslar -->
+  <!-- justify-content-around : navbar içeriğini iki yana yaslar ve aralarına boşluk bırakır -->
+
+
+  <nav class="navbar bg-light navbar-expand-sm ">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <nav class="navbar bg-light navbar-expand-sm justify-content-center mt-3">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <nav class="navbar bg-light navbar-expand-sm justify-content-end mt-3">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+
+  <nav class="navbar bg-primary navbar-dark navbar-expand-sm mt-3">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <nav class="navbar bg-danger navbar-dark navbar-expand-sm mt-3">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <nav class="navbar bg-light navbar-light navbar-expand-sm mt-3">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm mt-3">
+
+    <a href="#" class="navbar-brand">
+      <i class="fa fa-adn"></i>
+    </a>
+
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Link 3</a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm mt-3">
+
+    <!-- navbar-brand : navbar içerisindeki logo veya başlık için kullanılır -->
+    <!-- container classı var ise bu durumda eklediğimiz linki sağ tarafa otomatik alır -->
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <i class="fa fa-adn"></i>
+      </a>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <nav class="navbar bg-light navbar-light navbar-expand-sm ">
+
+    <a href="#" class="navbar-brand">Logo</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" id="batu" class="btn-click dropdown-item">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link 3</a>
+        </li>
+      </ul>
     </div>
-  </div>
-
-  <br><br><br>
-
-
-  <div class="dropdown">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-danger dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
-    </button>
-
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" id="batu" class="btn-click dropdown-item">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
-
-      <div class="dropdown-divider"></div> <!-- Açılır kapanır menünün alt kısmında bir çizgi çizmek için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item">Link 4</a></li>
-
-
-    </div>
-  </div>
-
-
-  <br><br><br>
-
-
-  <div class="dropdown">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
-    </button>
-
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
-
-      <div class="dropdown-header">Diğer Sayfalar</div>
-      <!-- Açılır kapanır menünün alt yeni bir link grup başlığı eklemek için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item">Link 4</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 5</a></li>
-
-    </div>
-  </div>
-
-  <br><br><br>
-
-
-  <div class="dropdown">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
-    </button>
-
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
-
-    </div>
-  </div>
-
-
-  <br><br><br>
-
-  <!-- dropend : sağa doğru açılan dropdown için kullanılır-->
-  <div class="dropdown dropend">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
-    </button>
-
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
-
-    </div>
-  </div>
-
-
-  <br><br><br>
-
-  <!-- dropend : sola doğru açılan dropdown için kullanılır-->
-  <div class="dropdown dropstart float-right">
-    <!-- Açılır kapanır menü yapmak için kullanılır -->
-    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
-      Dropdown Button
-    </button>
-
-    <div class="dropdown-menu">
-      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
-      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
-      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
-      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
-
-    </div>
-  </div>
-
-
-  <br><br><br>
-
-
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary">Button 1</button>
-    <button type="button" class="btn btn-primary">Button 2</button>
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button 3</button>
-
-      <div class="dropdown-menu">
-        <a href="#" class="dropdown-item">Link 1</a>
-        <a href="#" class="dropdown-item">Link 2</a>
-      </div>
-    </div>
-
-  </div>
-
-  <br><br><br>
-
-  <div class="btn-group">
-    <button type="button" class="btn btn-danger">Primary</button>
-    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-      data-bs-toggle="dropdown"></button>
-
-    <div class="dropdown-menu">
-      <a href="#" class="dropdown-item">Link 1</a>
-      <a href="#" class="dropdown-item">Link 2</a>
-    </div>
-
-  </div>
-
-  <div class="btn-group">
-    <button type="button" class="btn btn-warning">Primary</button>
-    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-      data-bs-toggle="dropdown"></button>
-
-    <div class="dropdown-menu">
-      <a href="#" class="dropdown-item">Link 1</a>
-      <a href="#" class="dropdown-item">Link 2</a>
-    </div>
-
-  </div>
-
-  
-
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-      data-bs-toggle="dropdown"></button>
-      <!-- dropdown-toggle-split aşağı bakan ok oluşturur-->
-
-    <div class="dropdown-menu">
-      <a href="#" class="dropdown-item">Link 1</a>
-      <a href="#" class="dropdown-item">Link 2</a>
-    </div>
-
-  </div>
-
-  <br><br><br>
-
-
-  <!-- btn-group-vertical : Alt alta menü oluşturmak için -->
-    <div class="btn-group-vertical">
-      <button type="button" class="btn btn-primary">Button 1</button>
-      <button type="button" class="btn btn-primary">Button 2</button>
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button 3</button>
-    
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">Link 1</a>
-          <a href="#" class="dropdown-item">Link 2</a>
-        </div>
-      </div>
-    
-    </div>
-
+  </nav>
 
 
 
