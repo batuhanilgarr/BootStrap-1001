@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dropdowns</title>
+
+  <!-- Bootstrap 5.2 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+  <div class="dropdown">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-danger dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" id="batu" class="btn-click dropdown-item">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="dropdown">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-danger dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" id="batu" class="btn-click dropdown-item">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
+
+      <div class="dropdown-divider"></div> <!-- Açılır kapanır menünün alt kısmında bir çizgi çizmek için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item">Link 4</a></li>
+
+
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+
+  <div class="dropdown">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 3</a></li>
+
+      <div class="dropdown-header">Diğer Sayfalar</div>
+      <!-- Açılır kapanır menünün alt yeni bir link grup başlığı eklemek için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item">Link 4</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 5</a></li>
+
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="dropdown">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
+
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+  <!-- dropend : sağa doğru açılan dropdown için kullanılır-->
+  <div class="dropdown dropend">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
+
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+  <!-- dropend : sola doğru açılan dropdown için kullanılır-->
+  <div class="dropdown dropstart float-right">
+    <!-- Açılır kapanır menü yapmak için kullanılır -->
+    <button class=" btn bg-warning dropdown-toggle text-light" data-bs-toggle="dropdown">
+      Dropdown Button
+    </button>
+
+    <div class="dropdown-menu">
+      <!-- Açılır kapanır menünün alt kısmını yapmak için kullanılır -->
+      <li><a href="#" class="btn-click dropdown-item active ">Link 1</a></li>
+      <li><a href="#" class="btn-click dropdown-item">Link 2</a></li>
+      <li><a href="#" class="btn-click dropdown-item disabled">Link 3</a></li>
+
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Button 1</button>
+    <button type="button" class="btn btn-primary">Button 2</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button 3</button>
+
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Primary</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"></button>
+
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Link 1</a>
+      <a href="#" class="dropdown-item">Link 2</a>
+    </div>
+
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning">Primary</button>
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"></button>
+
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Link 1</a>
+      <a href="#" class="dropdown-item">Link 2</a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"></button>
+      <!-- dropdown-toggle-split aşağı bakan ok oluşturur-->
+
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Link 1</a>
+      <a href="#" class="dropdown-item">Link 2</a>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+
+  <!-- btn-group-vertical : Alt alta menü oluşturmak için -->
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Button 1</button>
+      <button type="button" class="btn btn-primary">Button 2</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button 3</button>
+    
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Link 1</a>
+          <a href="#" class="dropdown-item">Link 2</a>
+        </div>
+      </div>
+    
+    </div>
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
