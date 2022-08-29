@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Scroolspy</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <style>
+    body {
+      position: relative;
+    }
+  </style>
+
+</head>
+
+<!-- data-bs-spy="scroll" : ilgili kısma gelince menünün o ismini belirgin hale getirir -->
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0" tabindex="0">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="home" class="bg-success" style="padding-bottom: 400px; padding-top: 400px;">
+    <div class="container">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tempora rerum eum aliquam vel minima!
+      </p>
+    </div>
+  </div>
+
+  <div id="about" class="bg-danger" style="padding-bottom: 400px; padding-top: 400px;">
+    <div class="container">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui itaque repellendus sint aliquid unde ipsum ipsam
+        doloremque laudantium architecto similique. Vero eligendi eos similique. Modi ab nostrum iusto ullam sequi.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas corrupti consequuntur magni, reprehenderit
+        aspernatur explicabo? Dicta minus officiis sit nostrum.
+      </p>
+    </div>
+  </div>
+
+  <div id="services" class="bg-warning" style="padding-bottom: 400px; padding-top: 400px;">
+    <div class="container">
+      <h1>Services</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quod?</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+  </div>
+
+  <div id="contact" class="bg-info" style="padding-bottom: 400px; padding-top: 400px;">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita eius aliquam aut obcaecati aliquid sit
+        id dignissimos.</p>
+      <p>
+        Lorem, ipsum dolor.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
