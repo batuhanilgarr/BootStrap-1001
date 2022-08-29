@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Popovers</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="container my-4">
+
+
+  <a href="#" data-bs-toggle="popover" title="popover header" data-bs-content="some content" class="btn btn-primary">
+    Toggle Popovers
+  </a>
+
+  <br><br>
+  <br><br>
+
+  <a href="#" data-bs-toggle="popover" title="popover header" data-bs-content="some content" class="btn btn-warning"
+    data-bs-placement="top">
+    popover on top
+  </a>
+
+  <a href="#" data-bs-toggle="popover" title="popover header" data-bs-content="some content" class="btn btn-primary"
+    data-bs-placement="left">
+    popover on left
+  </a>
+
+  <a href="#" data-bs-toggle="popover" title="popover header" data-bs-content="some content" class="btn btn-primary"
+    data-bs-placement="bottom">
+    popover on bottom
+  </a>
+
+  <a href="#" data-bs-toggle="popover" title="popover header" data-bs-content="some content" class="btn btn-primary"
+    data-bs-placement="right">
+    popover on right
+  </a>
+
+  <br><br>
+
+  <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" title="popover header" data-bs-content="some content"
+    class="btn btn-primary">
+    <!-- data-bs-trigger="focus" : üzerine tıklanınca çalışır boş yere basınca kaybolur -->
+    Toggle Popovers
+  </a>
+
+
+  <br><br>
+
+  <a id="btnPopover" href="#" data-bs-toggle="popover" data-bs-trigger="hover" title="popover header"
+    data-bs-content="some content" class="btn btn-primary">
+    <!-- data-bs-trigger="hover" : üzerine tıklanınca çalışır üzerinden çekilince kaybolur -->
+    Toggle Popovers
+  </a>
+
+  <br><br>
+
+  <button type="button" class="btn btn-success" onclick="showPopover()">
+    Show
+  </button>
+
+  <button type="button" class="btn btn-success" onclick="hidePopover()">
+    Hide
+  </button>
+
+  <button type="button" class="btn btn-success" onclick="togglePopover()">
+    Toggle
+  </button>
+
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-bs-toggle="popover"]').popover();
+    })
+
+
+    function showPopover() {
+      $('#btnPopover').popover('show'); // popover'ı göster
+    }
+
+    function hidePopover() {
+      $('#btnPopover').popover('hide'); // popover'ı gizle
+    }
+
+    function togglePopover() {
+      $('#btnPopover').popover('toggle'); // popover'ı göster / gizle
+    }
+
+    $('#btnPopover').on('show.bs.popover', function () {
+      console.log('Show...'); // popover gösterildiğinde çalışır
+    })
+
+    $('#btnPopover').on('shown.bs.popover', function () {
+      console.log('Shown...'); // popover gösterildiğinde 
+    })
+
+    $('#btnPopover').on('hide.bs.popover', function () {
+      console.log('Hide...'); // popover gizlendiğinde çalışır
+    })
+
+    $('#btnPopover').on('hidden.bs.popover', function () {
+      console.log('Hidden...'); // popover gizlendiğinde çalışır
+    })
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
