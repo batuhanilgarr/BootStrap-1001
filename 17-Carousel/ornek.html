@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carouse</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="container my-4">
+
+
+
+
+
+  <div id="slider2" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <!-- Resim altı geçiş için Kullanılır -->
+      <li data-bs-target="#slider2" data-bs-slide-to="0" class="active"></li> <!-- Aktif ilk resmi göstermek için -->
+      <li data-bs-target="#slider2" data-bs-slide-to="1"></li> <!-- 2. resmi göstermek için -->
+      <li data-bs-target="#slider2" data-bs-slide-to="2"></li> <!-- 3. resmi göstermek için -->
+    </ol>
+
+    <div class="carousel-inner">
+      <!-- carousel-inner -->
+      <div class="carousel-item active">
+        <!-- Aktif ilk resmi göstermek için -->
+        <img class="d-block w-100" src="../10-Images-Floats/img/1.jpg" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- Resim altında yazı göstermek için... -->
+          <!-- d-none : Başlangıçta yazıyı göster... -->
+          <!-- d-md-block : MD boyutuna gelince yazıyı block olarak ekranda göster... -->
+          <!-- d-sm-block : SM boyutuna gelince yazıyı block olarak ekranda göster... -->
+          <!-- d-xl-block : XL boyutuna gelince yazıyı block olarak ekranda göster... -->
+          <h5>Slider Header 1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, minima.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- 2. resmi göstermek için -->
+        <img class="d-block w-100" src="../10-Images-Floats/img/2.jpg" alt="">
+        <div class="carousel-caption d-none d-sm-block">
+          <!-- Resim altında yazılar -->
+          <h5>Slider Header 1</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- 3. resmi göstermek için -->
+        <img class="d-block w-100" src="../10-Images-Floats/img/3.jpg" alt="">
+        <div class="carousel-caption d-none d-lg-block">
+          <!-- Resim altında yazılar -->
+          <h5>Slider Header 1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet libero ea numquam est nisi fugiat ullam vitae
+            nesciunt ipsa fugit.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#slider2" class="carousel-control-prev" data-bs-slide="prev">
+      <!-- sola git -->
+      <!-- Bir önceki resim için -->
+      <i class="fa-solid fa-circle-left"></i>
+    </a>
+
+    <a href="#slider2" class="carousel-control-next" data-bs-slide="next">
+      <!-- sağa git -->
+      <!-- Bir sonraki resim için -->
+      <i class="fa-solid fa-circle-arrow-right"></i>
+    </a>
+  </div>
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('#slider2').carousel({
+        interval: 10000,
+        keywords: true,
+        wrap: true
+      });
+    });
+  </script>
+
+</body>
+
+</html>
