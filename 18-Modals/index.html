@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Modals</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="container my-4">
+
+  <!-- Açılır kutu içerisine alıp kullanıcının etkileşimi sonucu göstermek için -->
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open Modal
+  </button>
+
+
+
+
+  <div class="modal fade" id="myModal">
+    <!-- fade: açılır kutunun açılış ve kapanış animasyonu -->
+
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <!-- modal-sm: açılır kutunun küçük boyutu -->
+      <!-- modal-lg: açılır kutunun büyük boyutu -->
+      <!-- modal-dialog-centered: açılır kutunun ortalanması -->
+
+
+
+      <div class="modal-content">
+        <!-- modal-content: açılır kutunun içeriği -->
+
+        <div class="modal-header">
+          <!-- modal-header: açılır kutun başlık içeriği -->
+          <h4 class="modal-title">Modal 1</h4> <!-- modal-title: açılır kutunun başlığı -->
+          <button type="button" class="close" data-bs-dismiss="modal">
+            &times;
+          </button> <!-- close: açılır kutunun kapatma butonu -->
+        </div>
+
+        <div class="modal-body">
+          <!-- modal-body: açılır kutun içeriği -->
+          Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="modal-footer">
+          <!-- modal-footer: açılır kutunun alt kısmı -->
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal">
+            Close
+          </button> <!-- data-bs-dismiss="modal": açılır kutunun kapatma butonu -->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal 2</h4>
+          <button type="button" class="close" data-bs-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum, ex blanditiis obcaecati sed ipsam numquam
+          earum quis id? Sint?
+        </div>
+        <div class="modal-footer">
+
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+
+  <button id="btn-modal" type="button" class="btn btn-primary">
+    Open Modal
+  </button>
+
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal 3</h4>
+          <button type="button" class="close" data-bs-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum, ex blanditiis obcaecati sed ipsam numquam
+          earum quis id? Sint?
+        </div>
+        <div class="modal-footer">
+
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+  <script>
+
+    $(function () { // sayfa yüklendiğinde çalışacak kodlar
+
+      $('#myModal2').modal('show'); // açılır kutuyu açmak için
+
+      $('#btn-modal').click(function () { // butona tıklandığında açılır kutuyu açmak için
+        $('#myModal3').modal('show'); // açılır kutuyu açmak için
+      });
+
+
+      $('#myModal3').on('hide.bs.modal', function (e) { // açılır kutu kapatıldığını belirtmek için hide
+        console.log('hide'); // konsola hide yazdır
+      });
+
+      $('#myModal3').on('hidden.bs.modal', function (e) { // açılır kutu kapatıldığında ekranda bilgide gidince ekrana hidden yazdırır
+        console.log('hidden');
+      });
+
+      $('#myModal3').on('show.bs.modal', function (e) { // açılır kutu açılma esnasında show yazdırır
+        console.log('show');
+      });
+
+      $('#myModal3').on('shown.bs.modal', function (e) { // açılır kutu tamamen açılıp ekrana bilgi görüntülendikten sonra shown 
+        console.log('shown');
+      });
+
+    });
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
