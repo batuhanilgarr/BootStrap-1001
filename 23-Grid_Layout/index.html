@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Layout</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3751f55923.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap 5.2
+  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap 4.0 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="container my-4 text-center">
+
+    <h2 class="my-5">Eşit Kolonlar</h2>
+
+    <div class="row">
+      <div class="col border">Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+      <div class="col border">Column</div>
+    </div>
+
+    <br><br>
+
+    <h2 class="my-5">Eşit Olmayan Kolonlar</h2>
+
+    <div class="row my-2">
+      <div class="col-2 border">2 Column</div>
+      <div class="col-10 border">10 Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-8 border">8 Column</div>
+      <div class="col-4 border">4 Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-8 border">8 Column</div>
+      <div class="col-6 border">6 Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-4 border">4 Column</div>
+      <div class="col-5 border">5 Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-4 border mr-auto">4 Column</div>
+      <!-- mr-auto : kalan boşluğu ortaya almak için..  Soldaki kolon sağdakini iter -->
+      <div class="col-5 border">5 Column</div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-4 border">4 Column</div>
+      <div class="col-5 border ml-auto">5 Column</div>
+      <!-- ml-auto : kalan boşluğu ortaya almak için..  Sağdaki kolon soldakini iter -->
+    </div>
+
+
+
+
+    <h2 class="my-5">Kolon Sıralama</h2>
+
+    <div class="row">
+      <div class="col-3 border order-3">3 Column</div> <!-- order-3 : 3. sıraya al -->
+      <div class="col-4 border order-2">4 Column</div> <!-- order-2 : 2. sıraya al -->
+      <div class="col border order-1">5 Column</div> <!-- order-1 : 1. sıraya al -->
+    </div>
+
+
+
+
+    <h2 class="my-5">İç içe Satırlar</h2>
+
+    <div class="row">
+      <div class="col-4 border">4 Column</div>
+
+      <!-- 8 Column'Luk bir satırın içerisine tekrar row div'i ile Column ekleyebiliriz iç içe row -->
+      <div class="col-8 border">8 Column 
+        
+        <div class="row">
+          <div class="col-6 bg-primary">6 Column</div> 
+          <div class="col-6 bg-danger">6 Column</div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jquery-3.6.0.min.js -->
+  <script src=" js/jquery-3.6.0.min.js">
+  </script>
+
+  <!-- popper.min.js -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- bootstrap.min.js -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
